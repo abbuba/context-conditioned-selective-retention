@@ -1,0 +1,85 @@
+context_schema:
+  version: "v0.1"
+  status: "DEFINED_NOT_YET_ANNOTATED"
+
+  purpose: >
+    Represent externally specified operational policy. Context must not be
+    fabricated from unknown site identities or derived from ground-truth labels.
+
+  fields:
+    camera_id:
+      type: categorical
+      source: "dataset metadata or documented camera mapping"
+
+    scene_id:
+      type: categorical
+      source: "dataset metadata"
+
+    zone_class:
+      type: categorical
+      allowed_values:
+        - public
+        - semi_public
+        - restricted
+        - entry_exit
+        - corridor
+        - parking
+        - transit_platform
+        - industrial_work_area
+      source: "documented policy mapping or manually audited scene mapping"
+
+    site_type:
+      type: categorical
+      allowed_values:
+        - campus
+        - commercial
+        - residential
+        - transit
+        - industrial
+        - public_street
+      source: "only documented metadata or custom collection"
+
+    operating_state:
+      type: categorical
+      allowed_values:
+        - open
+        - closed
+        - restricted_hours
+        - emergency
+      source: "real schedule or explicitly simulated policy"
+
+    time_bin:
+      type: categorical
+      allowed_values:
+        - day
+        - evening
+        - night
+      source: "genuine timestamp only"
+
+    allowed_activity:
+      type: categorical
+      source: "versioned policy rule"
+
+    risk_weight:
+      type: continuous
+      range: [0.0, 1.0]
+      source: "policy rule, not ground-truth event label"
+
+    policy_version:
+      type: string
+      source: "experiment configuration"
+
+  current_dataset_use:
+    xd_violence:
+      status: "NO_OPERATIONAL_CONTEXT_ASSIGNED"
+      reason: >
+        XD-Violence feature files do not provide verified site, zone, schedule,
+        or security-policy metadata.
+
+    nwpu_campus:
+      status: "FUTURE_CONTEXT_DATASET"
+      planned_context: "scene_id, camera_id, scene-dependent activity policy"
+
+    raw_video_subset:
+      status: "FUTURE_EVIDENCE_DATASET"
+      planned_context: "documented policy profile and temporal clip extraction"

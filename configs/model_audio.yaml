@@ -1,0 +1,6 @@
+audio_model:
+  name: "to_be_selected"
+  sampling_rate: 16000
+  clip_seconds: 1.0
+  score_type: "event_probability"
+  calibration: "temperature_scaling"

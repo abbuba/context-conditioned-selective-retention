@@ -1,0 +1,34 @@
+{
+  "policy_name": "official_event_recall_95_policy",
+  "policy_version": "v1",
+  "created_utc": "2026-10-02T11:33:45.248094+00:00",
+  "dataset": "XD-Violence",
+  "temporal_unit_frames": 16,
+  "fps_assumption": 24.0,
+  "temporal_unit_seconds": 0.6666666666666666,
+  "score_field": "event_probability",
+  "threshold": 0.12,
+  "smoothing_window_units": 3,
+  "minimum_trigger_units": 2,
+  "pre_buffer_units": 0,
+  "post_buffer_units": 0,
+  "event_definition": "Official XD-Violence annotation frame-interval pairs",
+  "event_preservation_definition": "At least 80% temporal overlap with an official annotated event interval",
+  "validation_results": {
+    "official_event_recall": 0.9761904761904762,
+    "retained_unit_percent": 79.84644913627639
+  },
+  "evaluation_results": {
+    "official_event_recall": 0.9551820728291317,
+    "event_duration_coverage": 0.9632491065149748,
+    "retained_unit_percent": 75.16383495145631,
+    "planned_duration_reduction_percent": 24.83616504854369,
+    "total_official_events": 357,
+    "preserved_official_events": 341,
+    "missed_official_events": 16
+  },
+  "decision_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_retention_decisions_all_218.csv",
+  "interval_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_retention_intervals_all_218.csv",
+  "split_summary_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_retention_split_summary.csv",
+  "raw_subset_interval_file": null
+}

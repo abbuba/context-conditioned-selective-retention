@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-02T10:24:50.893148+00:00",
+  "status": "PASS",
+  "purpose": "Pilot extraction of temporal pretrained MIX2 scores for annotation-matched XD-Violence videos.",
+  "checkpoint": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\ckpt\\wsanodet_mix2.pkl",
+  "modality": "MIX2",
+  "fps_for_feature_time_estimation": 24.0,
+  "frames_per_temporal_score": 16,
+  "temporal_duration_seconds": 0.6666666666666666,
+  "matched_annotation_videos": 218,
+  "validation_videos": 44,
+  "evaluation_videos": 174,
+  "total_temporal_units": 20648,
+  "positive_temporal_units": 8835,
+  "negative_temporal_units": 11813,
+  "random_seed": 42,
+  "temporal_score_csv": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\temporal_mapping\\xd_temporal_scores_218.csv",
+  "split_csv": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\metadata\\xd_temporal_video_split.csv",
+  "summary_csv": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\temporal_mapping\\xd_temporal_video_summary_218.csv",
+  "scope_note": "This is a temporal score extraction and pilot split only. No retention threshold, VAS, context, raw-video extraction, IPFS, or Hyperledger Fabric operation is performed."
+}

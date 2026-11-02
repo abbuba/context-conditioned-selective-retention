@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-02T10:46:14.688214+00:00",
+  "status": "PASS",
+  "purpose": "Fixed 24-video raw evidence pipeline proof subset.",
+  "policy": {
+    "threshold": 0.13,
+    "smoothing_window": 3,
+    "minimum_trigger_units": 2,
+    "pre_buffer_units": 0,
+    "post_buffer_units": 2
+  },
+  "subset_counts": {
+    "retained_anomaly": 8,
+    "missed_anomaly": 4,
+    "near_threshold_anomaly": 4,
+    "normal": 8,
+    "total": 24
+  },
+  "subset_manifest": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\metadata\\xd_raw_video_pipeline_subset_24.csv",
+  "scope_note": "This subset is for end-to-end raw-video pipeline proof, not final statistical performance reporting."
+}

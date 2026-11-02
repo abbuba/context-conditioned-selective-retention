@@ -1,0 +1,3 @@
+policy,threshold,smoothing_window,minimum_trigger_units,pre_buffer_units,post_buffer_units,unit_evidence_recall,event_evidence_recall,retention_ratio,retained_unit_percent,storage_reduction_percent,retained_units,false_retained_units,missed_positive_units,total_events,preserved_events
+simple_threshold_baseline,0.119894,1,1,0,0,0.9623196938475125,0.9540229885057471,0.7484830097087378,74.84830097087378,25.151699029126217,12335,5797,256,348,332
+optimized_smoothing_buffer_policy,0.12,3,2,0,0,0.962761259935237,0.9511494252873564,0.7456310679611651,74.5631067961165,25.436893203883493,12288,5747,253,348,331

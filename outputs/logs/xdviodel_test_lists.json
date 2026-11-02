@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-02T07:23:20.628562+00:00",
+  "matched_video_count": 800,
+  "rgb_list_count": 4000,
+  "audio_list_count": 800,
+  "expected_rgb_list_count": 4000,
+  "rgb_list": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\list\\rgb_test.list",
+  "audio_list": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\list\\audio_test.list",
+  "checkpoint_mode": "MIX2",
+  "status": "PASS"
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-02T07:21:02.887690+00:00",
+  "checkpoint_mode": "MIX2",
+  "required_modalities": {
+    "visual": "I3D RGB, 1024 dimensions",
+    "audio": "VGGish, 128 dimensions"
+  },
+  "excluded_modalities": [
+    "I3D optical flow",
+    "VGGish training features"
+  ],
+  "rgb_extraction": {
+    "archive": "i3d-features.zip",
+    "target_directory": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test",
+    "expected_content": "I3D RGB test features",
+    "selected_file_count": 4000,
+    "newly_extracted_file_count": 4000,
+    "already_present_file_count": 0,
+    "selected_uncompressed_bytes": 2983403520,
+    "selected_uncompressed_gb": 2.779
+  },
+  "audio_extraction": {
+    "archive": "vggish-features.zip",
+    "target_directory": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test",
+    "expected_content": "VGGish audio test features",
+    "selected_file_count": 800,
+    "newly_extracted_file_count": 800,
+    "already_present_file_count": 0,
+    "selected_uncompressed_bytes": 74674688,
+    "selected_uncompressed_gb": 0.07
+  },
+  "disk_after_extraction": {
+    "free_gb": 119.07,
+    "used_gb": 332.77
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-10-02T11:47:38.659984+00:00",
+  "status": "PASS",
+  "encoding_scope": "Video-only. Audio streams, metadata, and chapters are intentionally excluded from both normalized full-video and retained-clip storage measurements.",
+  "policy": {
+    "threshold": 0.12,
+    "smoothing_window": 3,
+    "minimum_trigger_units": 2,
+    "pre_buffer_units": 0,
+    "post_buffer_units": 0
+  },
+  "raw_video_count": 24,
+  "retained_clip_count": 27,
+  "raw_source_bytes": 214840449,
+  "normalized_full_video_bytes": 102191845,
+  "retained_clip_bytes": 14863766,
+  "raw_duration_seconds": 2141.51784,
+  "retained_duration_seconds": 205.33333499999998,
+  "duration_retention_percent": 9.588215011087648,
+  "duration_reduction_percent": 90.41178498891234,
+  "normalized_byte_retention_percent": 14.544962956682111,
+  "normalized_byte_reduction_percent": 85.4550370433179,
+  "raw_interval_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_final_policy_raw_intervals_24.csv",
+  "normalized_manifest_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_final_policy_normalized_baseline_24.csv",
+  "clip_manifest_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_final_policy_retained_clip_manifest_24.csv"
+}

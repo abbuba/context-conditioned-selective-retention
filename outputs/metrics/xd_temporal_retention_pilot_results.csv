@@ -1,0 +1,4 @@
+policy,threshold,temporal_evidence_recall,retention_ratio,retained_unit_percent,storage_reduction_percent,retained_temporal_units,true_retained_units,false_retained_units,missed_anomalous_units,retention_precision
+C0_continuous_retention,0.0,1.0,1.0,100.0,0.0,16480,6794,9686,0,0.4122572815533981
+C2_temporal_score_triggered,0.11989420785057439,0.9623196938475125,0.7484830097087378,74.84830097087378,25.151699029126217,12335,6538,5797,256,0.5300364815565464
+C6_random_duration_matched,,0.7533117456579335,0.7484830097087378,74.84830097087378,25.151699029126217,12335,5118,7217,1676,0.41491690312119983

@@ -1,0 +1,252 @@
+{
+  "repository": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet",
+  "files": {
+    "README.md": {
+      "exists": true,
+      "relevant_lines": [
+        {
+          "line": 10,
+          "text": "* use make_list.py in the list folder to generate the training and test list."
+        },
+        {
+          "line": 14,
+          "text": "## How to test"
+        },
+        {
+          "line": 17,
+          "text": "&nbsp; &nbsp; &nbsp;  *the model is in the ckpt folder.*"
+        }
+      ]
+    },
+    "option.py": {
+      "exists": true,
+      "relevant_lines": [
+        {
+          "line": 4,
+          "text": "parser.add_argument('--modality', default='MIX2', help='the type of the input, AUDIO,RGB,FLOW, MIX1, MIX2, or MIX3, MIX_ALL')"
+        },
+        {
+          "line": 5,
+          "text": "parser.add_argument('--rgb-list', default='list/rgb.list', help='list of rgb features ')"
+        },
+        {
+          "line": 7,
+          "text": "parser.add_argument('--audio-list', default='list/audio.list', help='list of audio features')"
+        },
+        {
+          "line": 8,
+          "text": "parser.add_argument('--test-rgb-list', default='list/rgb_test.list', help='list of test rgb features ')"
+        },
+        {
+          "line": 9,
+          "text": "parser.add_argument('--test-flow-list', default='list/flow_test.list', help='list of test flow features')"
+        },
+        {
+          "line": 10,
+          "text": "parser.add_argument('--test-audio-list', default='list/audio_test.list', help='list of test audio features')"
+        },
+        {
+          "line": 16,
+          "text": "parser.add_argument('--model-name', default='wsanodet', help='name to save model')"
+        },
+        {
+          "line": 17,
+          "text": "parser.add_argument('--pretrained-ckpt', default=None, help='ckpt for pretrained model')"
+        },
+        {
+          "line": 18,
+          "text": "parser.add_argument('--feature-size', type=int, default=1024+128, help='size of feature (default: 2048)')"
+        }
+      ]
+    },
+    "test.py": {
+      "exists": true,
+      "relevant_lines": [
+        {
+          "line": 5,
+          "text": "def test(dataloader, model, device, gt):"
+        }
+      ]
+    },
+    "eval.py": {
+      "exists": false
+    },
+    "inference.py": {
+      "exists": false
+    },
+    "main.py": {
+      "exists": true,
+      "relevant_lines": [
+        {
+          "line": 11,
+          "text": "from test import test"
+        },
+        {
+          "line": 27,
+          "text": "train_loader = DataLoader(Dataset(args, test_mode=False),"
+        },
+        {
+          "line": 30,
+          "text": "test_loader = DataLoader(Dataset(args, test_mode=True),"
+        },
+        {
+          "line": 44,
+          "text": "if not os.path.exists('./ckpt'):"
+        },
+        {
+          "line": 45,
+          "text": "os.makedirs('./ckpt')"
+        },
+        {
+          "line": 56,
+          "text": "pr_auc, pr_auc_online = test(test_loader, model, device, gt)"
+        },
+        {
+          "line": 63,
+          "text": "torch.save(model.state_dict(), './ckpt/'+args.model_name+'{}.pkl'.format(epoch))"
+        },
+        {
+          "line": 65,
+          "text": "pr_auc, pr_auc_online = test(test_loader, model, device, gt)"
+        },
+        {
+          "line": 67,
+          "text": "torch.save(model.state_dict(), './ckpt/' + args.model_name + '.pkl')"
+        }
+      ]
+    },
+    "dataset.py": {
+      "exists": true,
+      "relevant_lines": [
+        {
+          "line": 7,
+          "text": "def __init__(self, args, transform=None, test_mode=False):"
+        },
+        {
+          "line": 8,
+          "text": "self.modality = args.modality"
+        },
+        {
+          "line": 10,
+          "text": "if test_mode:"
+        },
+        {
+          "line": 11,
+          "text": "self.rgb_list_file = args.test_rgb_list"
+        },
+        {
+          "line": 12,
+          "text": "self.flow_list_file = args.test_flow_list"
+        },
+        {
+          "line": 13,
+          "text": "self.audio_list_file = args.test_audio_list"
+        },
+        {
+          "line": 20,
+          "text": "self.test_mode = test_mode"
+        },
+        {
+          "line": 25,
+          "text": "if self.modality == 'AUDIO':"
+        },
+        {
+          "line": 27,
+          "text": "elif self.modality == 'RGB':"
+        },
+        {
+          "line": 29,
+          "text": "elif self.modality == 'FLOW':"
+        },
+        {
+          "line": 31,
+          "text": "elif self.modality == 'MIX':"
+        },
+        {
+          "line": 34,
+          "text": "elif self.modality == 'MIX2':"
+        },
+        {
+          "line": 37,
+          "text": "elif self.modality == 'MIX3':"
+        },
+        {
+          "line": 40,
+          "text": "elif self.modality == 'MIX_ALL':"
+        },
+        {
+          "line": 45,
+          "text": "assert 1 > 2, 'Modality is wrong!'"
+        },
+        {
+          "line": 53,
+          "text": "if self.modality == 'AUDIO':"
+        },
+        {
+          "line": 55,
+          "text": "elif self.modality == 'RGB':"
+        },
+        {
+          "line": 57,
+          "text": "elif self.modality == 'FLOW':"
+        },
+        {
+          "line": 59,
+          "text": "elif self.modality == 'MIX':"
+        },
+        {
+          "line": 66,
+          "text": "elif self.modality == 'MIX2':"
+        },
+        {
+          "line": 73,
+          "text": "elif self.modality == 'MIX3':"
+        },
+        {
+          "line": 80,
+          "text": "elif self.modality == 'MIX_ALL':"
+        },
+        {
+          "line": 89,
+          "text": "assert 1>2, 'Modality is wrong!'"
+        },
+        {
+          "line": 92,
+          "text": "if self.test_mode:"
+        }
+      ]
+    },
+    "infer.py": {
+      "exists": true,
+      "relevant_lines": [
+        {
+          "line": 6,
+          "text": "from test import test"
+        },
+        {
+          "line": 15,
+          "text": "test_loader = DataLoader(Dataset(args, test_mode=True),"
+        },
+        {
+          "line": 21,
+          "text": "{k.replace('module.', ''): v for k, v in torch.load('ckpt/wsanodet_mix2.pkl').items()})"
+        },
+        {
+          "line": 24,
+          "text": "pr_auc, pr_auc_online = test(test_loader, model, device, gt)"
+        }
+      ]
+    }
+  },
+  "candidate_entrypoints": [
+    "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\test.py",
+    "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\main.py"
+  ],
+  "recommended_fixed_values": {
+    "modality": "MIX2",
+    "feature_size": 1152,
+    "checkpoint": "ckpt/wsanodet_mix2.pkl",
+    "rgb_list": "list/rgb_test.list",
+    "audio_list": "list/audio_test.list"
+  }
+}

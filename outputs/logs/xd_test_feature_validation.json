@@ -1,0 +1,196 @@
+{
+  "timestamp_utc": "2026-10-02T07:21:37.728017+00:00",
+  "rgb_file_count": 4000,
+  "audio_file_count": 800,
+  "rgb_video_count": 800,
+  "audio_video_count": 800,
+  "matched_video_count": 800,
+  "rgb_only_video_count": 0,
+  "audio_only_video_count": 0,
+  "rgb_videos_not_exactly_five_crops": 0,
+  "annotation_file_exists": true,
+  "annotation_line_count": 500,
+  "sample_arrays": [
+    {
+      "video_id": "A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A",
+      "rgb_crop_0": "A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          360,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          360,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A",
+      "rgb_crop_0": "A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          103,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          103,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A",
+      "rgb_crop_0": "A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          435,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          435,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A",
+      "rgb_crop_0": "A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          223,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          223,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "About.Time.2013__#00-23-50_00-24-31_label_A",
+      "rgb_crop_0": "About.Time.2013__#00-23-50_00-24-31_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          61,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          61,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "About.Time.2013__#00-30-50_00-32-31_label_A",
+      "rgb_crop_0": "About.Time.2013__#00-30-50_00-32-31_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          151,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          151,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "About.Time.2013__#00-40-52_00-42-31_label_A",
+      "rgb_crop_0": "About.Time.2013__#00-40-52_00-42-31_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          148,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          148,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "Bad.Boys.1995__#00-10-00_00-11-52_label_A",
+      "rgb_crop_0": "Bad.Boys.1995__#00-10-00_00-11-52_label_A__0.npy",
+      "rgb": {
+        "shape": [
+          168,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          168,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "Bad.Boys.1995__#01-11-55_01-12-40_label_G-B2-B6",
+      "rgb_crop_0": "Bad.Boys.1995__#01-11-55_01-12-40_label_G-B2-B6__0.npy",
+      "rgb": {
+        "shape": [
+          67,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          67,
+          128
+        ],
+        "dtype": "float32"
+      }
+    },
+    {
+      "video_id": "Bad.Boys.1995__#01-33-51_01-34-37_label_B2-0-0",
+      "rgb_crop_0": "Bad.Boys.1995__#01-33-51_01-34-37_label_B2-0-0__0.npy",
+      "rgb": {
+        "shape": [
+          68,
+          1024
+        ],
+        "dtype": "float32"
+      },
+      "audio": {
+        "shape": [
+          68,
+          128
+        ],
+        "dtype": "float32"
+      }
+    }
+  ],
+  "validation_status": "PASS"
+}

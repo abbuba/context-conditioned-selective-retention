@@ -1,0 +1,15 @@
+evidence_backend:
+  encryption: "AES-GCM_to_be_implemented"
+  hash: "SHA-256"
+  ipfs_mode: "private_pinned_nodes_to_be_implemented"
+  ledger: "Hyperledger_Fabric_to_be_implemented"
+  store_on_ledger:
+    - incident_id
+    - cid
+    - ciphertext_sha256
+    - timestamp
+    - camera_pseudonym
+    - event_class
+    - preservation_priority
+    - policy_version
+    - model_version

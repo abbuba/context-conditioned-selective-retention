@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-10-02T09:23:39.559983+00:00",
+  "status": "PASS",
+  "score_input": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\scores\\xdviodel_offline_calibrated_event_probabilities.csv",
+  "validation_videos": 160,
+  "evaluation_videos": 640,
+  "threshold_selection": {
+    "target_validation_evidence_recall": 0.98,
+    "selected_threshold": 0.4244361791309206,
+    "selected_validation_metrics": {
+      "threshold": 0.4244361791309206,
+      "evidence_recall": 0.98,
+      "retention_ratio": 0.625,
+      "retained_video_percent": 62.5,
+      "storage_reduction_percent": 37.5,
+      "retained_video_count": 100,
+      "false_preserved_video_count": 2,
+      "missed_event_count": 2,
+      "preservation_precision": 0.98
+    }
+  },
+  "evaluation_results": {
+    "C0_continuous_retention": {
+      "evidence_recall": 1.0,
+      "retention_ratio": 1.0,
+      "retained_video_percent": 100.0,
+      "storage_reduction_percent": 0.0,
+      "retained_video_count": 640,
+      "false_preserved_video_count": 240,
+      "missed_event_count": 0,
+      "preservation_precision": 0.625
+    },
+    "C2_audio_video_event_conditioned": {
+      "evidence_recall": 0.94,
+      "retention_ratio": 0.6,
+      "retained_video_percent": 60.0,
+      "storage_reduction_percent": 40.0,
+      "retained_video_count": 384,
+      "false_preserved_video_count": 8,
+      "missed_event_count": 24,
+      "preservation_precision": 0.9791666666666666
+    },
+    "C6_random_duration_matched": {
+      "evidence_recall": 0.5925,
+      "retention_ratio": 0.6,
+      "retained_video_percent": 60.0,
+      "storage_reduction_percent": 40.0,
+      "retained_video_count": 384,
+      "false_preserved_video_count": 147,
+      "missed_event_count": 163,
+      "preservation_precision": 0.6171875
+    }
+  },
+  "random_seed": 42,
+  "scope_note": "This is a video-level retention simulation based on feature-level event probabilities. It does not yet represent temporal raw-video clip extraction.",
+  "decision_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_event_conditioned_retention_decisions.csv",
+  "threshold_curve_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_validation_retention_threshold_curve.csv",
+  "results_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_event_conditioned_retention_results.csv"
+}

@@ -1,0 +1,3 @@
+split,video_count,temporal_units,retained_units,retained_unit_percent,planned_duration_reduction_percent
+evaluation,174,16480,12387,75.16383495145631,24.83616504854369
+validation,44,4168,3328,79.84644913627639,20.15355086372361

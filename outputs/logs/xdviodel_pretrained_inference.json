@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-10-02T09:04:49.201836+00:00",
+  "status": "PASS",
+  "device": "cpu",
+  "checkpoint": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\ckpt\\wsanodet_mix2.pkl",
+  "checkpoint_sha256": "27067896258294da0a711e3f0c071190ea5848961298cbde389265627191ec2c",
+  "checkpoint_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "state_dict_key_count": 31
+  },
+  "repository_commit": "f846d8cfc454943ec165bd2489b71e7dc0a1064d",
+  "modality": "MIX2",
+  "feature_dimension": 1152,
+  "video_count": 800,
+  "rgb_entries": 4000,
+  "audio_entries": 800,
+  "batch_size": 5,
+  "score_type": "Mean sigmoid output over five RGB crops for each video",
+  "offline_score_summary": {
+    "minimum": 2.009377775280541e-09,
+    "maximum": 0.9995295405387878,
+    "mean": 0.2820392847061157,
+    "standard_deviation": 0.3035120368003845
+  },
+  "online_score_summary": {
+    "minimum": 0.0025429048109799623,
+    "maximum": 0.9940560460090637,
+    "mean": 0.4220021069049835,
+    "standard_deviation": 0.3306601941585541
+  },
+  "output_csv": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\scores\\xdviodel_mix2_raw_video_scores.csv"
+}

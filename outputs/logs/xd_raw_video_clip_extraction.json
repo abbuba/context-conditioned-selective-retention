@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-02T11:23:24.617145+00:00",
+  "status": "PASS",
+  "experiment_type": "RAW_VIDEO_PIPELINE_PROOF",
+  "encoding": {
+    "video_codec": "libx264",
+    "crf": "23",
+    "preset": "medium",
+    "audio_codec": "aac",
+    "audio_bitrate": "128k"
+  },
+  "raw_source_bytes": 214840449,
+  "normalized_full_video_bytes": 137695233,
+  "retained_clip_bytes": 16457976,
+  "raw_duration_seconds": 2141.51784,
+  "retained_duration_seconds": 176.0,
+  "duration_retention_percent": 8.21846994279534,
+  "duration_storage_reduction_percent": 91.78153005720466,
+  "source_byte_retention_percent": 7.66055744000051,
+  "source_byte_reduction_percent": 92.33944255999948,
+  "normalized_byte_retention_percent": 11.9524660668536,
+  "normalized_byte_reduction_percent": 88.04753393314641,
+  "normalized_video_manifest": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_normalized_full_video_baseline_24.csv",
+  "retained_clip_manifest": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_retained_clip_manifest_24.csv"
+}

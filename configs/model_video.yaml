@@ -1,0 +1,6 @@
+video_model:
+  name: "to_be_selected"
+  input_fps: 25
+  clip_seconds: 1.0
+  score_type: "event_probability"
+  calibration: "temperature_scaling"

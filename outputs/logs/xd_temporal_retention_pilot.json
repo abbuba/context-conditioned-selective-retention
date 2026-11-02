@@ -1,0 +1,92 @@
+{
+  "timestamp_utc": "2026-10-02T10:27:18.121590+00:00",
+  "status": "PASS",
+  "experiment_type": "PILOT_ONLY",
+  "validation_video_count": 44,
+  "evaluation_video_count": 174,
+  "validation_temporal_units": 4168,
+  "evaluation_temporal_units": 16480,
+  "calibration_method": "Logistic regression / Platt scaling",
+  "threshold_target_validation_recall": 0.98,
+  "selected_threshold": 0.11989420785057439,
+  "selected_validation_policy_metrics": {
+    "threshold": 0.11989420785057439,
+    "temporal_evidence_recall": 0.9804017638412543,
+    "retention_ratio": 0.7943857965451055,
+    "retained_unit_percent": 79.43857965451056,
+    "storage_reduction_percent": 20.561420345489445,
+    "retained_temporal_units": 3311,
+    "true_retained_units": 2001,
+    "false_retained_units": 1310,
+    "missed_anomalous_units": 40,
+    "retention_precision": 0.6043491392328602
+  },
+  "validation_raw_metrics": {
+    "average_precision": 0.8779358737868622,
+    "roc_auc": 0.8807678371475951,
+    "brier_score": 0.15590841807874606
+  },
+  "validation_calibrated_metrics": {
+    "average_precision": 0.8779358737868622,
+    "roc_auc": 0.8807678371475951,
+    "brier_score": 0.14766965095283607
+  },
+  "evaluation_raw_metrics": {
+    "average_precision": 0.8062317951521234,
+    "roc_auc": 0.8561413229695635,
+    "brier_score": 0.1676331492166442
+  },
+  "evaluation_calibrated_metrics": {
+    "average_precision": 0.8062317951521234,
+    "roc_auc": 0.8561413229695635,
+    "brier_score": 0.155984239377711
+  },
+  "evaluation_retention_results": [
+    {
+      "policy": "C0_continuous_retention",
+      "threshold": 0.0,
+      "temporal_evidence_recall": 1.0,
+      "retention_ratio": 1.0,
+      "retained_unit_percent": 100.0,
+      "storage_reduction_percent": 0.0,
+      "retained_temporal_units": 16480,
+      "true_retained_units": 6794,
+      "false_retained_units": 9686,
+      "missed_anomalous_units": 0,
+      "retention_precision": 0.4122572815533981
+    },
+    {
+      "policy": "C2_temporal_score_triggered",
+      "threshold": 0.11989420785057439,
+      "temporal_evidence_recall": 0.9623196938475125,
+      "retention_ratio": 0.7484830097087378,
+      "retained_unit_percent": 74.84830097087378,
+      "storage_reduction_percent": 25.151699029126217,
+      "retained_temporal_units": 12335,
+      "true_retained_units": 6538,
+      "false_retained_units": 5797,
+      "missed_anomalous_units": 256,
+      "retention_precision": 0.5300364815565464
+    },
+    {
+      "policy": "C6_random_duration_matched",
+      "threshold": null,
+      "temporal_evidence_recall": 0.7533117456579335,
+      "retention_ratio": 0.7484830097087378,
+      "retained_unit_percent": 74.84830097087378,
+      "storage_reduction_percent": 25.151699029126217,
+      "retained_temporal_units": 12335,
+      "true_retained_units": 5118,
+      "false_retained_units": 7217,
+      "missed_anomalous_units": 1676,
+      "retention_precision": 0.41491690312119983
+    }
+  ],
+  "scope_note": "This is a feature-level temporal retention pilot. It does not use raw videos, context-conditioned VAS, temporal clip merging, encryption, IPFS, or Fabric.",
+  "files": {
+    "calibrated_scores": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_temporal_calibrated_scores.csv",
+    "decisions": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_temporal_retention_pilot_decisions.csv",
+    "results": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_temporal_retention_pilot_results.csv",
+    "threshold_curve": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_temporal_retention_threshold_curve.csv"
+  }
+}

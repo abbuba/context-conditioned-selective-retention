@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-10-02T10:32:53.696525+00:00",
+  "status": "PASS",
+  "experiment_type": "PILOT_ONLY",
+  "validation_recall_target": 0.98,
+  "event_coverage_threshold": 0.8,
+  "selected_policy_on_validation": {
+    "threshold": 0.12,
+    "smoothing_window": 3,
+    "minimum_trigger_units": 2,
+    "pre_buffer_units": 0,
+    "post_buffer_units": 0,
+    "unit_evidence_recall": 0.9818716315531603,
+    "event_evidence_recall": 0.975,
+    "retention_ratio": 0.793426103646833,
+    "retained_unit_percent": 79.3426103646833,
+    "storage_reduction_percent": 20.657389635316704,
+    "retained_units": 3307,
+    "false_retained_units": 1303,
+    "missed_positive_units": 37,
+    "total_events": 80,
+    "preserved_events": 78
+  },
+  "evaluation_result": {
+    "threshold": 0.12,
+    "smoothing_window": 3,
+    "minimum_trigger_units": 2,
+    "pre_buffer_units": 0,
+    "post_buffer_units": 0,
+    "unit_evidence_recall": 0.962761259935237,
+    "event_evidence_recall": 0.9511494252873564,
+    "retention_ratio": 0.7456310679611651,
+    "retained_unit_percent": 74.5631067961165,
+    "storage_reduction_percent": 25.436893203883493,
+    "retained_units": 12288,
+    "false_retained_units": 5747,
+    "missed_positive_units": 253,
+    "total_events": 348,
+    "preserved_events": 331
+  },
+  "simple_threshold_baseline": {
+    "threshold": 0.119894,
+    "smoothing_window": 1,
+    "minimum_trigger_units": 1,
+    "pre_buffer_units": 0,
+    "post_buffer_units": 0,
+    "unit_evidence_recall": 0.9623196938475125,
+    "event_evidence_recall": 0.9540229885057471,
+    "retention_ratio": 0.7484830097087378,
+    "retained_unit_percent": 74.84830097087378,
+    "storage_reduction_percent": 25.151699029126217,
+    "retained_units": 12335,
+    "false_retained_units": 5797,
+    "missed_positive_units": 256,
+    "total_events": 348,
+    "preserved_events": 332
+  },
+  "files": {
+    "validation_grid": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_temporal_policy_optimization_validation.csv",
+    "results": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_temporal_policy_optimization_results.csv"
+  },
+  "scope_note": "This is feature-level policy optimization. It does not represent final raw-video retention or final context VAS."
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-02T11:18:37.553157+00:00",
+  "status": "PASS",
+  "experiment_type": "RAW_VIDEO_PIPELINE_PROOF",
+  "policy": {
+    "threshold": 0.13,
+    "smoothing_window": 3,
+    "minimum_trigger_units": 2,
+    "pre_buffer_units": 0,
+    "post_buffer_units": 2
+  },
+  "selected_videos": 24,
+  "retained_intervals": 18,
+  "total_raw_duration_seconds": 2141.51784,
+  "total_planned_retained_duration_seconds": 176.0,
+  "planned_duration_retention_ratio": 0.0821846994279534,
+  "planned_duration_storage_reduction_percent": 91.78153005720466,
+  "interval_manifest": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_raw_video_retention_intervals_24.csv",
+  "video_summary": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_raw_video_retention_video_summary_24.csv",
+  "scope_note": "Intervals are derived using the fixed 95% pilot policy. No FFmpeg clips have been created in this step."
+}

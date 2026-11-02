@@ -1,0 +1,7 @@
+fusion:
+  method: "calibrated_logistic_regression"
+  comparison_methods:
+    - weighted_average
+    - max_score
+    - gated_fusion
+  validation_only_parameter_selection: true

@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-02T08:13:58.645545+00:00",
+  "status": "PASS",
+  "original_backup": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\layers_original_cuda.py",
+  "patched_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\layers.py",
+  "original_sha256": "156088d2a25c35d7efa920844194eee95436151906d634d15b8e4adfd9b92529",
+  "patched_sha256": "cc7fe9484af58fc316c52d4a639172d852d983aa0d93e76439fd157188041267",
+  "cuda_single_quote_replacements": 2,
+  "cuda_double_quote_replacements": 0,
+  "total_cuda_replacements": 2,
+  "changes": [
+    "Restored original author layers.py from backup.",
+    "Patched only the DistanceAdj class.",
+    "Inserted automatic CPU/CUDA device selection.",
+    "Replaced hard-coded CUDA placement with .to(device)."
+  ],
+  "not_changed": [
+    "Model checkpoint",
+    "Model weights",
+    "Model architecture",
+    "Input features",
+    "Score computation"
+  ]
+}

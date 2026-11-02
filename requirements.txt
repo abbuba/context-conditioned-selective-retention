@@ -1,0 +1,15 @@
+numpy>=1.26
+pandas>=2.2
+PyYAML>=6.0
+tqdm>=4.66
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+opencv-python>=4.9
+ffmpeg-python>=0.2.0
+torch>=2.2
+torchaudio>=2.2
+torchvision>=0.17
+soundfile>=0.12
+librosa>=0.10
+pytest>=8.0

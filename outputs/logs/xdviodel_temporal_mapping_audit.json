@@ -1,0 +1,270 @@
+{
+  "timestamp_utc": "2026-10-02T10:07:36.813412+00:00",
+  "status": "PASS",
+  "purpose": "Expose existing pretrained temporal model outputs before official score averaging. No model weights, architecture, features, or scoring formulation were changed.",
+  "subset_video_count": 5,
+  "checkpoint": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\ckpt\\wsanodet_mix2.pkl",
+  "modality": "MIX2",
+  "feature_dimension": 1152,
+  "dataset_max_seqlen": 200,
+  "subset_records": [
+    {
+      "video_index": 0,
+      "video_id": "A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A",
+      "rgb_crop_paths": [
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__0.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__1.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__2.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__3.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__4.npy"
+      ],
+      "audio_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A__vggish.npy",
+      "original_rgb_shape": [
+        360,
+        1024
+      ],
+      "original_audio_shape": [
+        360,
+        128
+      ],
+      "processed_input_shape": [
+        5,
+        360,
+        1152
+      ],
+      "offline_logits_shape": [
+        5,
+        360,
+        1
+      ],
+      "online_logits_shape": [
+        5,
+        360,
+        1
+      ],
+      "offline_probability_shape": [
+        5,
+        360,
+        1
+      ],
+      "online_probability_shape": [
+        5,
+        360,
+        1
+      ],
+      "max_seqlen": 200
+    },
+    {
+      "video_index": 1,
+      "video_id": "A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A",
+      "rgb_crop_paths": [
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__0.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__1.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__2.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__3.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__4.npy"
+      ],
+      "audio_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A__vggish.npy",
+      "original_rgb_shape": [
+        103,
+        1024
+      ],
+      "original_audio_shape": [
+        103,
+        128
+      ],
+      "processed_input_shape": [
+        5,
+        103,
+        1152
+      ],
+      "offline_logits_shape": [
+        5,
+        103,
+        1
+      ],
+      "online_logits_shape": [
+        5,
+        103,
+        1
+      ],
+      "offline_probability_shape": [
+        5,
+        103,
+        1
+      ],
+      "online_probability_shape": [
+        5,
+        103,
+        1
+      ],
+      "max_seqlen": 200
+    },
+    {
+      "video_index": 2,
+      "video_id": "A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A",
+      "rgb_crop_paths": [
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__0.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__1.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__2.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__3.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__4.npy"
+      ],
+      "audio_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A__vggish.npy",
+      "original_rgb_shape": [
+        435,
+        1024
+      ],
+      "original_audio_shape": [
+        435,
+        128
+      ],
+      "processed_input_shape": [
+        5,
+        435,
+        1152
+      ],
+      "offline_logits_shape": [
+        5,
+        435,
+        1
+      ],
+      "online_logits_shape": [
+        5,
+        435,
+        1
+      ],
+      "offline_probability_shape": [
+        5,
+        435,
+        1
+      ],
+      "online_probability_shape": [
+        5,
+        435,
+        1
+      ],
+      "max_seqlen": 200
+    },
+    {
+      "video_index": 3,
+      "video_id": "A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A",
+      "rgb_crop_paths": [
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__0.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__1.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__2.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__3.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__4.npy"
+      ],
+      "audio_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A__vggish.npy",
+      "original_rgb_shape": [
+        223,
+        1024
+      ],
+      "original_audio_shape": [
+        223,
+        128
+      ],
+      "processed_input_shape": [
+        5,
+        223,
+        1152
+      ],
+      "offline_logits_shape": [
+        5,
+        223,
+        1
+      ],
+      "online_logits_shape": [
+        5,
+        223,
+        1
+      ],
+      "offline_probability_shape": [
+        5,
+        223,
+        1
+      ],
+      "online_probability_shape": [
+        5,
+        223,
+        1
+      ],
+      "max_seqlen": 200
+    },
+    {
+      "video_index": 4,
+      "video_id": "About.Time.2013__#00-23-50_00-24-31_label_A",
+      "rgb_crop_paths": [
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\About.Time.2013__#00-23-50_00-24-31_label_A__0.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\About.Time.2013__#00-23-50_00-24-31_label_A__1.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\About.Time.2013__#00-23-50_00-24-31_label_A__2.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\About.Time.2013__#00-23-50_00-24-31_label_A__3.npy",
+        "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test\\About.Time.2013__#00-23-50_00-24-31_label_A__4.npy"
+      ],
+      "audio_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test\\About.Time.2013__#00-23-50_00-24-31_label_A__vggish.npy",
+      "original_rgb_shape": [
+        61,
+        1024
+      ],
+      "original_audio_shape": [
+        61,
+        128
+      ],
+      "processed_input_shape": [
+        5,
+        61,
+        1152
+      ],
+      "offline_logits_shape": [
+        5,
+        61,
+        1
+      ],
+      "online_logits_shape": [
+        5,
+        61,
+        1
+      ],
+      "offline_probability_shape": [
+        5,
+        61,
+        1
+      ],
+      "online_probability_shape": [
+        5,
+        61,
+        1
+      ],
+      "max_seqlen": 200
+    }
+  ],
+  "annotation_file": {
+    "exists": true,
+    "line_count": 500,
+    "sample_lines": [
+      "v=S-7rRLrxnVQ__#1_label_B4-0-0 0 1517 1970 3038",
+      "v=u5SF4SlqNDQ__#00-00-00_00-01-00_label_G-0-0 624 912 950 1441",
+      "v=u5SF4SlqNDQ__#00-02-39_00-03-41_label_G-0-0 77 1430",
+      "v=cEOM18n8fhU__#1_label_G-0-0 2133 2750",
+      "v=NnmqkS1e88s__#1_label_B4-0-0 0 1750",
+      "v=vaSOMEIe1Bg__#1_label_G-0-0 300 1380",
+      "v=ZnFlL84K7HE__#00-27-53_00-34-45_label_B4-0-0 0 9523",
+      "v=wVey5JDRf_g__#00-00-00_00-01-20_label_B6-0-0 51 210 273 410 544 720 828 970 1135 1270 1413 1500 1618 1710 1822 1920",
+      "v=wVey5JDRf_g__#00-01-30_00-02-41_label_B6-0-0 142 296 447 508 606 710 800 870 1000 1185 1414 1550 1635 1700",
+      "v=wVey5JDRf_g__#00-04-09_00-05-06_label_B6-0-0 85 200 352 438 547 690 777 833 918 952 1055 1170 1314 1365",
+      "v=m8EkFsaGPzU__#1_label_B4-0-0 0 3380 4523 5700",
+      "v=5BBoVfKOyeM__#00-08-19_00-10-10_label_B6-0-0 1067 1200 1650 1734",
+      "v=BQjKQbYgUBA__#1_label_B1-0-0 635 667 733 759 932 1020 1234 1297 1977 2373 3195 3422",
+      "v=bfOlheR5nUQ__#00-00-00_00-04-33_label_B4-0-0 0 6553",
+      "v=bfOlheR5nUQ__#00-04-33_00-06-02_label_B4-0-0 0 2135",
+      "v=YKtw6uLEGps__#1_label_B4-0-0 807 2118",
+      "v=7xQr5wYwNPg__#1_label_B4-0-0 0 403 600 1008",
+      "v=-fOWSLV6Esw__#1_label_B4-0-0 20 772",
+      "v=b0MUjeKAGZw__#1_label_B4-0-0 0 2790",
+      "Bad.Boys.1995__#01-11-55_01-12-40_label_G-B2-B6 157 180 185 244 250 360 582 810"
+    ]
+  },
+  "temporal_score_csv": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\temporal_mapping\\xdviodel_temporal_score_probe.csv",
+  "critical_note": "start_time, end_time, and anomaly_label remain blank until the exact original-feature-to-processed-sequence mapping and annotation frame convention are verified."
+}

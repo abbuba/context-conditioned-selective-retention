@@ -1,0 +1,164 @@
+study:
+  name: "Context-Conditioned Selective Evidence Retention"
+  version: "v0.1"
+  started_on: "2026-10-02"
+  status: "in_progress_pilot"
+  primary_goal: >
+    Evaluate whether calibrated multimodal event evidence and operational-policy
+    context can reduce retained surveillance footage while preserving relevant
+    event evidence.
+  next_phase: >
+    C1 RGB-only baseline using supported AMD ROCm GPU acceleration, followed by
+    context-schema definition and context-conditioned VAS evaluation.
+  next_phase_prerequisite: >
+    Verify the supported AMD ROCm and PyTorch device path before reporting a
+    completed accelerated training run.
+
+current_verified_state:
+  score_modality: "XDVioDet MIX2 audio-video"
+  context_assigned_or_evaluated: false
+  c1_rgb_only_baseline: "pending"
+  context_conditioned_vas: "pending"
+  ipfs_fabric_encryption_integrity_tamper_tests: "pending"
+  retention_results_status: "PILOT"
+  temporal_annotation_matched_scope:
+    feature_list_video_ids: 800
+    official_annotation_ids: 500
+    matched_video_ids: 218
+    validation_videos: 44
+    evaluation_videos: 174
+    evaluation_temporal_units: 16480
+    evaluation_official_events: 357
+    scope_note: >
+      The 218 IDs are the intersection of the 800 test-feature IDs and IDs in
+      the official annotation file; this is not the complete 800-video set.
+  temporal_pilot_policy:
+    event_definition: "Official annotation frame-interval pairs"
+    event_coverage_threshold: 0.80
+    threshold: 0.12
+    smoothing_window_units: 3
+    minimum_trigger_units: 2
+    pre_buffer_units: 0
+    post_buffer_units: 0
+    validation_target_event_recall: 0.97
+    result_status: "PILOT"
+  c0_c2_c6_baseline:
+    result_status: "PILOT"
+    evaluation_videos: 174
+    evaluation_temporal_units: 16480
+    evaluation_official_events: 357
+    c2_score_modality: "calibrated MIX2 audio-video"
+    c6_random_seed_start: 20261002
+    c6_random_seed_count: 100
+    c6_random_seed_end: 20261101
+  raw_video_pipeline:
+    result_status: "PILOT"
+    selected_videos: 24
+    retained_clips: 27
+    encoded_output_scope: "video-only"
+    note: >
+      This selected pipeline-validation subset is not representative benchmark
+      performance. Audio was omitted from encoded outputs after AAC conversion
+      failed on source six-channel audio; detector scores remain MIX2 audio-video.
+
+datasets:
+  primary:
+    name: "XD-Violence"
+    modality: ["video", "audio"]
+    status: "score inference and retention pilots completed; context work pending"
+    purpose:
+      - multimodal_event_scoring
+      - selective_retention
+      - storage_reduction
+  secondary:
+    name: "NWPU Campus"
+    modality: ["video"]
+    status: "planned_not_evaluated"
+    purpose:
+      - scene_context
+      - context_policy_validation
+      - cross_dataset_evaluation
+  temporal_validation:
+    name: "NTU CCTV-Fights CCTV subset"
+    modality: ["video"]
+    status: "planned_not_evaluated"
+    purpose:
+      - temporal_clip_coverage
+      - pre_post_roll_evaluation
+
+time:
+  # Original design values for future context-policy work; not used by the
+  # completed official-interval temporal retention pilot.
+  snippet_seconds: 1.0
+  pre_event_seconds: 10.0
+  post_event_seconds: 15.0
+  merge_gap_seconds: 3.0
+  minimum_trigger_seconds: 2.0
+  minimum_release_seconds: 2.0
+
+preservation:
+  evidence_coverage_threshold: 0.80
+  # The following context-priority thresholds are planned, not experimentally
+  # evaluated in the current project state.
+  critical_event_probability_threshold: 0.90
+  initial_priority_threshold: 0.70
+
+metrics:
+  detection:
+    - average_precision
+    - precision
+    - recall
+    - f1
+    - false_alarms_per_hour
+    - expected_calibration_error
+    - brier_score
+  preservation:
+    - evidence_recall
+    - event_coverage
+    - event_window_iou
+    - pre_event_coverage
+    - post_event_coverage
+    - retention_ratio
+    - storage_reduction
+    - false_preserved_duration
+    - missed_events
+  systems:
+    - decision_latency
+    - encryption_latency
+    - hash_latency
+    - ipfs_upload_latency
+    - fabric_submit_latency
+    - fabric_commit_latency
+    - verification_latency
+
+conditions:
+  - C0_continuous_retention
+  - C1_video_only
+  - C2_audio_video
+  - C3_audio_video_scene_context
+  - C4_context_conditioned_preservation
+  - C5_rule_only_policy
+  - C6_random_duration_matched
+  - C7_periodic_retention
+
+condition_status:
+  C0_continuous_retention: "completed_PILOT"
+  C1_video_only: "pending"
+  C2_audio_video: "completed_PILOT"
+  C3_audio_video_scene_context: "pending_context_schema_and_data"
+  C4_context_conditioned_preservation: "pending_context_schema_and_data"
+  C5_rule_only_policy: "pending"
+  C6_random_duration_matched: "completed_100_seed_PILOT"
+  C7_periodic_retention: "pending"
+
+reproducibility:
+  video_split_seed: 42
+  c6_random_baseline:
+    base_seed: 20261002
+    runs: 100
+    last_seed: 20261101
+  planned_context_study_seeds: [13, 27, 42, 77, 101]
+  save_per_video_outputs: true
+  save_per_event_outputs: true
+  save_configuration_with_every_run: true
+  test_set_never_used_for_threshold_selection: true

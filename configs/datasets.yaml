@@ -1,0 +1,16 @@
+datasets:
+  xd_violence:
+    root: "data/raw/xd_violence"
+    manifest: "data/metadata/xd_violence_manifest.csv"
+    modality: ["video", "audio"]
+    status: "not_downloaded"
+  nwpu_campus:
+    root: "data/raw/nwpu_campus"
+    manifest: "data/metadata/nwpu_manifest.csv"
+    modality: ["video"]
+    status: "not_downloaded"
+  cctv_fights:
+    root: "data/raw/cctv_fights"
+    manifest: "data/metadata/cctv_fights_manifest.csv"
+    modality: ["video"]
+    status: "not_downloaded"

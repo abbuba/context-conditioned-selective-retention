@@ -1,0 +1,50 @@
+{
+  "timestamp_utc": "2026-10-02T13:18:28.030840+00:00",
+  "status": "PASS",
+  "scope": "Evaluation split of the 218-video temporal retention experiment",
+  "event_definition": "Official annotation frame intervals",
+  "event_coverage_threshold": 0.8,
+  "random_baseline_runs": 100,
+  "random_baseline_seed_start": 20261002,
+  "c0_continuous_retention": {
+    "total_temporal_units": 16480,
+    "retained_temporal_units": 16480,
+    "retained_duration_percent": 100.0,
+    "planned_duration_reduction_percent": 0.0,
+    "total_official_events": 357,
+    "preserved_official_events": 354,
+    "missed_official_events": 3,
+    "official_event_recall": 0.9915966386554622,
+    "event_duration_coverage": 0.999229339061913
+  },
+  "c2_audio_video_conditioned": {
+    "total_temporal_units": 16480,
+    "retained_temporal_units": 12387,
+    "retained_duration_percent": 75.16383495145631,
+    "planned_duration_reduction_percent": 24.83616504854369,
+    "total_official_events": 357,
+    "preserved_official_events": 341,
+    "missed_official_events": 16,
+    "official_event_recall": 0.9551820728291317,
+    "event_duration_coverage": 0.9632491065149748
+  },
+  "c6_random_duration_matched": {
+    "total_temporal_units": 16480,
+    "retained_temporal_units": 12387,
+    "retained_duration_percent_mean": 75.16383495145631,
+    "retained_duration_percent_std": 0.0,
+    "planned_duration_reduction_percent_mean": 24.83616504854369,
+    "planned_duration_reduction_percent_std": 0.0,
+    "total_official_events": 357,
+    "preserved_official_events_mean": 135.91,
+    "preserved_official_events_std": 8.029107400985845,
+    "missed_official_events_mean": 221.09,
+    "missed_official_events_std": 8.029107400985845,
+    "official_event_recall_mean": 0.3807002801120449,
+    "official_event_recall_std": 0.022490496921528977,
+    "event_duration_coverage_mean": 0.7503304208772049,
+    "event_duration_coverage_std": 0.004163663848333584
+  },
+  "summary_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_c0_c2_c6_baseline_summary.csv",
+  "random_runs_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_c6_random_duration_matched_runs.csv"
+}

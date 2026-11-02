@@ -1,0 +1,203 @@
+{
+  "timestamp_utc": "2026-10-02T11:09:43.043012+00:00",
+  "status": "PASS",
+  "archive": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\archives\\videos.zip",
+  "selected_video_count": 24,
+  "target_directory": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset",
+  "total_subset_bytes": 214840449,
+  "total_subset_gb": 0.2,
+  "videos": [
+    {
+      "video_id": "A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A",
+      "archive_path": "videos/A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\A.Beautiful.Mind.2001__#00-25-20_00-29-20_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 24689582,
+      "file_size_mb": 23.546
+    },
+    {
+      "video_id": "A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A",
+      "archive_path": "videos/A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\A.Beautiful.Mind.2001__#00-40-52_00-42-01_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 6584398,
+      "file_size_mb": 6.279
+    },
+    {
+      "video_id": "A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A",
+      "archive_path": "videos/A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\A.Beautiful.Mind.2001__#00-50-26_00-55-16_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 28324452,
+      "file_size_mb": 27.012
+    },
+    {
+      "video_id": "A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A",
+      "archive_path": "videos/A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\A.Beautiful.Mind.2001__#01-14-30_01-16-59_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 11773071,
+      "file_size_mb": 11.228
+    },
+    {
+      "video_id": "About.Time.2013__#00-23-50_00-24-31_label_A",
+      "archive_path": "videos/About.Time.2013__#00-23-50_00-24-31_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\About.Time.2013__#00-23-50_00-24-31_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 3101420,
+      "file_size_mb": 2.958
+    },
+    {
+      "video_id": "About.Time.2013__#00-30-50_00-32-31_label_A",
+      "archive_path": "videos/About.Time.2013__#00-30-50_00-32-31_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\About.Time.2013__#00-30-50_00-32-31_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 8458667,
+      "file_size_mb": 8.067
+    },
+    {
+      "video_id": "About.Time.2013__#00-40-52_00-42-31_label_A",
+      "archive_path": "videos/About.Time.2013__#00-40-52_00-42-31_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\About.Time.2013__#00-40-52_00-42-31_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 7724437,
+      "file_size_mb": 7.367
+    },
+    {
+      "video_id": "Bad.Boys.1995__#00-10-00_00-11-52_label_A",
+      "archive_path": "videos/Bad.Boys.1995__#00-10-00_00-11-52_label_A.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Bad.Boys.1995__#00-10-00_00-11-52_label_A.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 11975873,
+      "file_size_mb": 11.421
+    },
+    {
+      "video_id": "Brick.Mansions.2014__#00-11-57_00-12-12_label_B2-0-0",
+      "archive_path": "videos/Brick.Mansions.2014__#00-11-57_00-12-12_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Brick.Mansions.2014__#00-11-57_00-12-12_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 1323677,
+      "file_size_mb": 1.262
+    },
+    {
+      "video_id": "Bullet.in.the.Head.1990__#00-23-31_00-24-40_label_G-0-0",
+      "archive_path": "videos/Bullet.in.the.Head.1990__#00-23-31_00-24-40_label_G-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Bullet.in.the.Head.1990__#00-23-31_00-24-40_label_G-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 8052867,
+      "file_size_mb": 7.68
+    },
+    {
+      "video_id": "Bullet.in.the.Head.1990__#01-26-30_01-27-34_label_B2-0-0",
+      "archive_path": "videos/Bullet.in.the.Head.1990__#01-26-30_01-27-34_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Bullet.in.the.Head.1990__#01-26-30_01-27-34_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 9242845,
+      "file_size_mb": 8.815
+    },
+    {
+      "video_id": "Deadpool.2.2018__#01-03-09_01-03-54_label_B4-0-0",
+      "archive_path": "videos/Deadpool.2.2018__#01-03-09_01-03-54_label_B4-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Deadpool.2.2018__#01-03-09_01-03-54_label_B4-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 5208697,
+      "file_size_mb": 4.967
+    },
+    {
+      "video_id": "God.Bless.America.2011__#00-38-25_00-39-37_label_B2-B5-0",
+      "archive_path": "videos/God.Bless.America.2011__#00-38-25_00-39-37_label_B2-B5-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\God.Bless.America.2011__#00-38-25_00-39-37_label_B2-B5-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 6666297,
+      "file_size_mb": 6.357
+    },
+    {
+      "video_id": "Haywire.2011__#01-20-20_01-21-57_label_B1-0-0",
+      "archive_path": "videos/Haywire.2011__#01-20-20_01-21-57_label_B1-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Haywire.2011__#01-20-20_01-21-57_label_B1-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 9475338,
+      "file_size_mb": 9.036
+    },
+    {
+      "video_id": "Kill.Bill.Vol.2.2004__#0-25-20_0-26-20_label_B2-0-0",
+      "archive_path": "videos/Kill.Bill.Vol.2.2004__#0-25-20_0-26-20_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Kill.Bill.Vol.2.2004__#0-25-20_0-26-20_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 4447258,
+      "file_size_mb": 4.241
+    },
+    {
+      "video_id": "Kingsman.The.Secret.Service.2014__#00-22-10_00-23-10_label_B2-0-0",
+      "archive_path": "videos/Kingsman.The.Secret.Service.2014__#00-22-10_00-23-10_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Kingsman.The.Secret.Service.2014__#00-22-10_00-23-10_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 5122596,
+      "file_size_mb": 4.885
+    },
+    {
+      "video_id": "Lord.of.War__#01-41-04_01-41-53_label_B1-0-0",
+      "archive_path": "videos/Lord.of.War__#01-41-04_01-41-53_label_B1-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Lord.of.War__#01-41-04_01-41-53_label_B1-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 6557036,
+      "file_size_mb": 6.253
+    },
+    {
+      "video_id": "Mission.Impossible.II.2000__#01-18-55_01-20-53_label_B2-0-0",
+      "archive_path": "videos/Mission.Impossible.II.2000__#01-18-55_01-20-53_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Mission.Impossible.II.2000__#01-18-55_01-20-53_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 10884301,
+      "file_size_mb": 10.38
+    },
+    {
+      "video_id": "New.Kids.Turbo.2010__#00-22-35_00-23-14_label_B1-0-0",
+      "archive_path": "videos/New.Kids.Turbo.2010__#00-22-35_00-23-14_label_B1-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\New.Kids.Turbo.2010__#00-22-35_00-23-14_label_B1-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 3953178,
+      "file_size_mb": 3.77
+    },
+    {
+      "video_id": "Operation.Red.Sea.2018__#01-20-58_01-22-00_label_B5-0-0",
+      "archive_path": "videos/Operation.Red.Sea.2018__#01-20-58_01-22-00_label_B5-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Operation.Red.Sea.2018__#01-20-58_01-22-00_label_B5-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 5538732,
+      "file_size_mb": 5.282
+    },
+    {
+      "video_id": "Sin.City.2005__#0-06-42_0-07-06_label_B1-0-0",
+      "archive_path": "videos/Sin.City.2005__#0-06-42_0-07-06_label_B1-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Sin.City.2005__#0-06-42_0-07-06_label_B1-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 2704874,
+      "file_size_mb": 2.58
+    },
+    {
+      "video_id": "Tropa.de.Elite.2.2010__#00-42-00_00-43-00_label_B2-0-0",
+      "archive_path": "videos/Tropa.de.Elite.2.2010__#00-42-00_00-43-00_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Tropa.de.Elite.2.2010__#00-42-00_00-43-00_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 6961105,
+      "file_size_mb": 6.639
+    },
+    {
+      "video_id": "Young.And.Dangerous.III.1996__#00-23-00_00-25-54_label_B4-0-0",
+      "archive_path": "videos/Young.And.Dangerous.III.1996__#00-23-00_00-25-54_label_B4-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\Young.And.Dangerous.III.1996__#00-23-00_00-25-54_label_B4-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 23195740,
+      "file_size_mb": 22.121
+    },
+    {
+      "video_id": "wangted.2008__#0-48-30_0-49-00_label_B2-0-0",
+      "archive_path": "videos/wangted.2008__#0-48-30_0-49-00_label_B2-0-0.mp4",
+      "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\raw_subset\\wangted.2008__#0-48-30_0-49-00_label_B2-0-0.mp4",
+      "status": "already_exists",
+      "file_size_bytes": 2874008,
+      "file_size_mb": 2.741
+    }
+  ]
+}

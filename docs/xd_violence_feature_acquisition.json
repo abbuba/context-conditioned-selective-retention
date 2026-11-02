@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-02T06:26:13.008787+00:00",
+  "checkpoint_mode": "MIX2",
+  "required_downloads": [
+    {
+      "name": "I3D RGB test features",
+      "target_directory": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\i3d_rgb_test",
+      "required": true
+    },
+    {
+      "name": "VGGish audio test features",
+      "target_directory": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\official_features\\vggish_audio_test",
+      "required": true
+    },
+    {
+      "name": "Official test annotations",
+      "target_directory": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\raw\\xd_violence\\labels\\official",
+      "required": true
+    }
+  ],
+  "not_required_now": [
+    "I3D Flow features",
+    "Training features",
+    "Full raw video dataset"
+  ]
+}

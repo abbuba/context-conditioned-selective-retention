@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-10-02T07:38:26.960635+00:00",
+  "status": "PATCH_APPLIED",
+  "target_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\layers.py",
+  "backup_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet\\layers_original_cuda.py",
+  "original_sha256": "373f7b937cdda8fd74a98f07d90490f988c3a355d3b278875682baec93a36a4f",
+  "patched_sha256": "4e5333364fff7e657633bda67b2410be1badb1faaad6746daa2da6e3c3c799a9",
+  "original_code": "self.dist = torch.from_numpy(squareform(dist)).to('cuda')",
+  "replacement_code": "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n        self.dist = torch.from_numpy(squareform(dist)).to(device)",
+  "reason": "The official XDVioDet implementation hard-coded CUDA placement inside DistanceAdj.forward(). The local PyTorch build is CPU-only. The patch selects CUDA when available, otherwise CPU.",
+  "model_weights_modified": false,
+  "model_architecture_modified": false,
+  "feature_data_modified": false,
+  "scoring_logic_modified": false
+}

@@ -1,0 +1,114 @@
+{
+  "timestamp_utc": "2026-10-02T10:12:16.268260+00:00",
+  "status": "PASS",
+  "fps_assumption": 24.0,
+  "frames_per_temporal_score": 16,
+  "temporal_score_duration_seconds": 0.6666666666666666,
+  "temporal_mapping": {
+    "start_frame": "16 * temporal_index",
+    "end_frame": "16 * (temporal_index + 1) - 1",
+    "start_time_seconds": "(16 * temporal_index) / 24",
+    "end_time_seconds": "(16 * (temporal_index + 1)) / 24"
+  },
+  "proof_video_count": 5,
+  "proof_summary": [
+    {
+      "video_id": "Bad.Boys.1995__#01-11-55_01-12-40_label_G-B2-B6",
+      "video_index": 8,
+      "temporal_score_count": 67,
+      "annotation_intervals": [
+        {
+          "start_frame": 157,
+          "end_frame": 180
+        },
+        {
+          "start_frame": 185,
+          "end_frame": 244
+        },
+        {
+          "start_frame": 250,
+          "end_frame": 360
+        },
+        {
+          "start_frame": 582,
+          "end_frame": 810
+        }
+      ],
+      "positive_temporal_scores": 29
+    },
+    {
+      "video_id": "Bad.Boys.1995__#01-33-51_01-34-37_label_B2-0-0",
+      "video_index": 9,
+      "temporal_score_count": 68,
+      "annotation_intervals": [
+        {
+          "start_frame": 57,
+          "end_frame": 670
+        },
+        {
+          "start_frame": 728,
+          "end_frame": 800
+        }
+      ],
+      "positive_temporal_scores": 45
+    },
+    {
+      "video_id": "Bad.Boys.II.2003__#00-06-42_00-10-00_label_B2-G-0",
+      "video_index": 10,
+      "temporal_score_count": 297,
+      "annotation_intervals": [
+        {
+          "start_frame": 2610,
+          "end_frame": 2670
+        },
+        {
+          "start_frame": 2760,
+          "end_frame": 3060
+        },
+        {
+          "start_frame": 3167,
+          "end_frame": 4310
+        }
+      ],
+      "positive_temporal_scores": 97
+    },
+    {
+      "video_id": "Black.Hawk.Down.2001__#01-13-59_01-14-49_label_B2-0-0",
+      "video_index": 26,
+      "temporal_score_count": 75,
+      "annotation_intervals": [
+        {
+          "start_frame": 188,
+          "end_frame": 1190
+        }
+      ],
+      "positive_temporal_scores": 64
+    },
+    {
+      "video_id": "Black.Hawk.Down.2001__#01-32-40_01-34-00_label_B4-0-0",
+      "video_index": 27,
+      "temporal_score_count": 120,
+      "annotation_intervals": [
+        {
+          "start_frame": 0,
+          "end_frame": 269
+        },
+        {
+          "start_frame": 518,
+          "end_frame": 882
+        },
+        {
+          "start_frame": 1090,
+          "end_frame": 1180
+        },
+        {
+          "start_frame": 1220,
+          "end_frame": 1919
+        }
+      ],
+      "positive_temporal_scores": 91
+    }
+  ],
+  "csv_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\temporal_mapping\\xdviodel_temporal_annotation_proof.csv",
+  "critical_note": "The 16-frame temporal unit is verified from the official test.py np.repeat(pred, 16) evaluation logic. The 24 FPS mapping is supported by feature sequence lengths and filename clip durations; raw-video inspection is required before claiming exact encoded-video timing."
+}

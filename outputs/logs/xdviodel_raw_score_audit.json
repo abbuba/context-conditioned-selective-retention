@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-10-02T09:10:32.743376+00:00",
+  "status": "PASS",
+  "input_score_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\scores\\xdviodel_mix2_raw_video_scores.csv",
+  "random_seed": 42,
+  "validation_ratio": 0.2,
+  "evaluation_ratio": 0.8,
+  "total_videos": 800,
+  "validation_videos": 160,
+  "evaluation_videos": 640,
+  "validation_positive_videos": 100,
+  "validation_negative_videos": 60,
+  "evaluation_positive_videos": 400,
+  "evaluation_negative_videos": 240,
+  "offline_raw_metrics_all_800": {
+    "average_precision": 0.9959952596453441,
+    "roc_auc": 0.9927933333333333,
+    "score_min": 2.009377775280541e-09,
+    "score_max": 0.9995295405387878,
+    "score_mean": 0.28203928969284237,
+    "score_std": 0.3035120514376339,
+    "positive_count": 500,
+    "negative_count": 300,
+    "pr_curve_points": 801,
+    "threshold_count": 800
+  },
+  "online_raw_metrics_all_800": {
+    "average_precision": 0.9920070797026864,
+    "roc_auc": 0.9870933333333333,
+    "score_min": 0.0025429048109799,
+    "score_max": 0.9940560460090636,
+    "score_mean": 0.42200209331087535,
+    "score_std": 0.33066017985457413,
+    "positive_count": 500,
+    "negative_count": 300,
+    "pr_curve_points": 801,
+    "threshold_count": 800
+  },
+  "split_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\data\\metadata\\xd_violence_policy_calibration_evaluation_split.csv",
+  "important_scope_note": "This is a fixed policy calibration/evaluation split created from the locally available XD-Violence test-feature partition. It must not be reported as the official XD-Violence benchmark test protocol. It is used for selective-retention policy experiments because no training is performed in this study."
+}

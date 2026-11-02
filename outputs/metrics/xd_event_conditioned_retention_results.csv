@@ -1,0 +1,4 @@
+policy,threshold,evidence_recall,retention_ratio,retained_video_percent,storage_reduction_percent,retained_video_count,false_preserved_video_count,missed_event_count,preservation_precision
+C0_continuous_retention,0.0,1.0,1.0,100.0,0.0,640,240,0,0.625
+C2_audio_video_event_conditioned,0.4244361791309206,0.94,0.6,60.0,40.0,384,8,24,0.9791666666666666
+C6_random_duration_matched,,0.5925,0.6,60.0,40.0,384,147,163,0.6171875

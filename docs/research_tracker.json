@@ -1,0 +1,47 @@
+{
+  "updated_utc": "2026-10-02T09:16:37.902187+00:00",
+  "current_phase": "Phase 3: Context definition and baseline retention",
+  "current_position": "Pretrained audio-video event scores were generated, audited, split into validation/evaluation partitions, and calibrated.",
+  "completed": [
+    "Environment audit",
+    "Official XDVioDet repository acquisition",
+    "Checkpoint verification",
+    "I3D RGB and VGGish feature extraction",
+    "800-video feature alignment validation",
+    "CPU-compatible inference execution",
+    "Raw offline and online score extraction",
+    "160/640 stratified policy split",
+    "Platt score calibration"
+  ],
+  "measured_results": {
+    "video_count": 800,
+    "normal_video_count": 300,
+    "anomalous_video_count": 500,
+    "offline_average_precision": 0.995995,
+    "offline_roc_auc": 0.992793,
+    "online_average_precision": 0.992007,
+    "online_roc_auc": 0.987093,
+    "validation_brier_raw": 0.263724,
+    "validation_brier_calibrated": 0.111801,
+    "evaluation_brier_raw": 0.22795,
+    "evaluation_brier_calibrated": 0.102683
+  },
+  "not_completed": [
+    "Video-only baseline C1",
+    "Context-conditioned VAS",
+    "Selective-retention policy evaluation",
+    "Temporal clip extraction",
+    "Raw-video storage reduction",
+    "IPFS evidence storage",
+    "Hyperledger Fabric anchoring",
+    "Integrity/tampering tests"
+  ],
+  "important_constraints": [
+    "Current XDVioDet MIX2 score is audio-video, not video-only.",
+    "XD-Violence lacks verified operational-policy context metadata.",
+    "Do not fabricate bank, school, operating-hour, or restricted-zone labels.",
+    "Feature-level outputs support video-level retention simulation only.",
+    "Raw-video temporal evidence experiments require a documented raw-video subset."
+  ],
+  "next_step": "Create the operational-policy context schema, then execute C0 continuous retention, C2 audio-video event-conditioned retention, and C6 random duration-matched retention."
+}

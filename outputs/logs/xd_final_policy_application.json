@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-02T11:33:45.249202+00:00",
+  "status": "PASS",
+  "policy_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_official_event_policy.json",
+  "decision_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_retention_decisions_all_218.csv",
+  "interval_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_retention_intervals_all_218.csv",
+  "split_summary_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_final_retention_split_summary.csv",
+  "raw_subset_interval_file": null
+}

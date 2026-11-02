@@ -1,0 +1,9 @@
+preservation_policy:
+  score_name: "preservation_priority"
+  critical_event_probability_threshold: 0.90
+  initial_priority_threshold: 0.70
+  pre_event_seconds: 10.0
+  post_event_seconds: 15.0
+  merge_gap_seconds: 3.0
+  minimum_trigger_seconds: 2.0
+  minimum_release_seconds: 2.0

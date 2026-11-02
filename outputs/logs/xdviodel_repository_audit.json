@@ -1,0 +1,657 @@
+{
+  "audit_timestamp_utc": "2026-10-02T06:21:10.936739+00:00",
+  "official_repository_url": "https://github.com/Roc-Ng/XDVioDet.git",
+  "local_path": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\external\\XDVioDet",
+  "git_available": true,
+  "clone_status": "CLONED",
+  "git_remote": "https://github.com/Roc-Ng/XDVioDet.git",
+  "git_commit": "f846d8cfc454943ec165bd2489b71e7dc0a1064d",
+  "repository_contents": {
+    "important_files": [
+      {
+        "path": "dataset.py",
+        "size_bytes": 4963
+      },
+      {
+        "path": "infer.py",
+        "size_bytes": 926
+      },
+      {
+        "path": "layers.py",
+        "size_bytes": 6993
+      },
+      {
+        "path": "main.py",
+        "size_bytes": 2826
+      },
+      {
+        "path": "model.py",
+        "size_bytes": 4811
+      },
+      {
+        "path": "option.py",
+        "size_bytes": 1978
+      },
+      {
+        "path": "README.md",
+        "size_bytes": 804
+      },
+      {
+        "path": "test.py",
+        "size_bytes": 1288
+      },
+      {
+        "path": "train.py",
+        "size_bytes": 1963
+      },
+      {
+        "path": "utils.py",
+        "size_bytes": 741
+      },
+      {
+        "path": "list\\make_gt.py",
+        "size_bytes": 1666
+      },
+      {
+        "path": "list\\make_list.py",
+        "size_bytes": 499
+      }
+    ],
+    "checkpoint_files": [
+      {
+        "path": "ckpt\\wsanodet_mix2.pkl",
+        "size_bytes": 3382342,
+        "sha256": "27067896258294da0a711e3f0c071190ea5848961298cbde389265627191ec2c"
+      }
+    ],
+    "feature_references": [
+      {
+        "file": "dataset.py",
+        "line": 11,
+        "text": "self.rgb_list_file = args.test_rgb_list"
+      },
+      {
+        "file": "dataset.py",
+        "line": 12,
+        "text": "self.flow_list_file = args.test_flow_list"
+      },
+      {
+        "file": "dataset.py",
+        "line": 15,
+        "text": "self.rgb_list_file = args.rgb_list"
+      },
+      {
+        "file": "dataset.py",
+        "line": 16,
+        "text": "self.flow_list_file = args.flow_list"
+      },
+      {
+        "file": "dataset.py",
+        "line": 27,
+        "text": "elif self.modality == 'RGB':"
+      },
+      {
+        "file": "dataset.py",
+        "line": 28,
+        "text": "self.list = list(open(self.rgb_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 29,
+        "text": "elif self.modality == 'FLOW':"
+      },
+      {
+        "file": "dataset.py",
+        "line": 30,
+        "text": "self.list = list(open(self.flow_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 32,
+        "text": "self.list = list(open(self.rgb_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 33,
+        "text": "self.flow_list = list(open(self.flow_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 35,
+        "text": "self.list = list(open(self.rgb_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 38,
+        "text": "self.list = list(open(self.flow_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 41,
+        "text": "self.list = list(open(self.rgb_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 42,
+        "text": "self.flow_list = list(open(self.flow_list_file))"
+      },
+      {
+        "file": "dataset.py",
+        "line": 54,
+        "text": "features = np.array(np.load(self.list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 55,
+        "text": "elif self.modality == 'RGB':"
+      },
+      {
+        "file": "dataset.py",
+        "line": 56,
+        "text": "features = np.array(np.load(self.list[index].strip('\\n')),dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 57,
+        "text": "elif self.modality == 'FLOW':"
+      },
+      {
+        "file": "dataset.py",
+        "line": 58,
+        "text": "features = np.array(np.load(self.list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 60,
+        "text": "features1 = np.array(np.load(self.list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 61,
+        "text": "features2 = np.array(np.load(self.flow_list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 62,
+        "text": "if features1.shape[0] == features2.shape[0]:"
+      },
+      {
+        "file": "dataset.py",
+        "line": 63,
+        "text": "features = np.concatenate((features1, features2),axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 64,
+        "text": "else:# because the frames of flow is one less than that of rgb"
+      },
+      {
+        "file": "dataset.py",
+        "line": 65,
+        "text": "features = np.concatenate((features1[:-1], features2), axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 67,
+        "text": "features1 = np.array(np.load(self.list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 68,
+        "text": "features2 = np.array(np.load(self.audio_list[index//5].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 69,
+        "text": "if features1.shape[0] == features2.shape[0]:"
+      },
+      {
+        "file": "dataset.py",
+        "line": 70,
+        "text": "features = np.concatenate((features1, features2),axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 71,
+        "text": "else:# because the frames of flow is one less than that of rgb"
+      },
+      {
+        "file": "dataset.py",
+        "line": 72,
+        "text": "features = np.concatenate((features1[:-1], features2), axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 74,
+        "text": "features1 = np.array(np.load(self.list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 75,
+        "text": "features2 = np.array(np.load(self.audio_list[index//5].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 76,
+        "text": "if features1.shape[0] == features2.shape[0]:"
+      },
+      {
+        "file": "dataset.py",
+        "line": 77,
+        "text": "features = np.concatenate((features1, features2),axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 78,
+        "text": "else:# because the frames of flow is one less than that of rgb"
+      },
+      {
+        "file": "dataset.py",
+        "line": 79,
+        "text": "features = np.concatenate((features1[:-1], features2), axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 81,
+        "text": "features1 = np.array(np.load(self.list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 82,
+        "text": "features2 = np.array(np.load(self.flow_list[index].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 83,
+        "text": "features3 = np.array(np.load(self.audio_list[index//5].strip('\\n')), dtype=np.float32)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 84,
+        "text": "if features1.shape[0] == features2.shape[0]:"
+      },
+      {
+        "file": "dataset.py",
+        "line": 85,
+        "text": "features = np.concatenate((features1, features2, features3),axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 86,
+        "text": "else:# because the frames of flow is one less than that of rgb"
+      },
+      {
+        "file": "dataset.py",
+        "line": 87,
+        "text": "features = np.concatenate((features1[:-1], features2, features3[:-1]), axis=1)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 91,
+        "text": "features = self.tranform(features)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 93,
+        "text": "return features"
+      },
+      {
+        "file": "dataset.py",
+        "line": 96,
+        "text": "features = process_feat(features, self.max_seqlen, is_random=False)"
+      },
+      {
+        "file": "dataset.py",
+        "line": 97,
+        "text": "return features, label"
+      },
+      {
+        "file": "layers.py",
+        "line": 16,
+        "text": "def __init__(self, in_features, out_features, dropout, alpha, concat=True):"
+      },
+      {
+        "file": "layers.py",
+        "line": 19,
+        "text": "self.in_features = in_features"
+      },
+      {
+        "file": "layers.py",
+        "line": 20,
+        "text": "self.out_features = out_features"
+      },
+      {
+        "file": "layers.py",
+        "line": 24,
+        "text": "self.W = nn.Parameter(nn.init.xavier_uniform(torch.Tensor(in_features, out_features).type(torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor), gain=np.sqrt(2.0)), requires_grad=True)"
+      },
+      {
+        "file": "layers.py",
+        "line": 25,
+        "text": "self.a = nn.Parameter(nn.init.xavier_uniform(torch.Tensor(2*out_features, 1).type(torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor), gain=np.sqrt(2.0)), requires_grad=True)"
+      },
+      {
+        "file": "layers.py",
+        "line": 33,
+        "text": "a_input = torch.cat([h.repeat(1, N).view(N * N, -1), h.repeat(N, 1)], dim=1).view(N, -1, 2 * self.out_features)"
+      },
+      {
+        "file": "layers.py",
+        "line": 48,
+        "text": "return self.__class__.__name__ + ' (' + str(self.in_features) + ' -> ' + str(self.out_features) + ')'"
+      },
+      {
+        "file": "layers.py",
+        "line": 51,
+        "text": "def __init__(self, in_features, out_features):"
+      },
+      {
+        "file": "layers.py",
+        "line": 53,
+        "text": "self.weight = Parameter(FloatTensor(in_features, out_features))"
+      },
+      {
+        "file": "layers.py",
+        "line": 66,
+        "text": "def __init__(self, in_features, out_features, bias=False, residual=True):"
+      },
+      {
+        "file": "layers.py",
+        "line": 68,
+        "text": "self.in_features = in_features"
+      },
+      {
+        "file": "layers.py",
+        "line": 69,
+        "text": "self.out_features = out_features"
+      },
+      {
+        "file": "layers.py",
+        "line": 70,
+        "text": "self.weight = Parameter(FloatTensor(in_features, out_features))"
+      },
+      {
+        "file": "layers.py",
+        "line": 73,
+        "text": "self.bias = Parameter(FloatTensor(out_features))"
+      },
+      {
+        "file": "layers.py",
+        "line": 79,
+        "text": "elif (in_features == out_features):"
+      },
+      {
+        "file": "layers.py",
+        "line": 82,
+        "text": "# self.residual = linear(in_features, out_features)"
+      },
+      {
+        "file": "layers.py",
+        "line": 83,
+        "text": "self.residual = nn.Conv1d(in_channels=in_features, out_channels=out_features, kernel_size=5, padding=2)"
+      },
+      {
+        "file": "layers.py",
+        "line": 97,
+        "text": "if self.in_features != self.out_features and self.residual:"
+      },
+      {
+        "file": "layers.py",
+        "line": 109,
+        "text": "+ str(self.in_features) + ' -> ' \\"
+      },
+      {
+        "file": "layers.py",
+        "line": 110,
+        "text": "+ str(self.out_features) + ')'"
+      },
+      {
+        "file": "layers.py",
+        "line": 116,
+        "text": "def __init__(self, in_features, out_features):"
+      },
+      {
+        "file": "layers.py",
+        "line": 118,
+        "text": "self.in_features = in_features"
+      },
+      {
+        "file": "layers.py",
+        "line": 119,
+        "text": "self.out_features = out_features"
+      },
+      {
+        "file": "layers.py",
+        "line": 121,
+        "text": "self.weight0 = Parameter(FloatTensor(in_features, out_features))"
+      },
+      {
+        "file": "layers.py",
+        "line": 122,
+        "text": "self.weight1 = Parameter(FloatTensor(in_features, out_features))"
+      },
+      {
+        "file": "layers.py",
+        "line": 164,
+        "text": "+ str(self.in_features) + ' -> ' \\"
+      },
+      {
+        "file": "layers.py",
+        "line": 165,
+        "text": "+ str(self.out_features) + ')'"
+      },
+      {
+        "file": "model.py",
+        "line": 19,
+        "text": "n_features = args.feature_size"
+      },
+      {
+        "file": "model.py",
+        "line": 22,
+        "text": "self.conv1d1 = nn.Conv1d(in_channels=n_features, out_channels=512, kernel_size=1, padding=0)"
+      },
+      {
+        "file": "model.py",
+        "line": 33,
+        "text": "self.simAdj = SimilarityAdj(n_features, 32)"
+      },
+      {
+        "file": "option.py",
+        "line": 4,
+        "text": "parser.add_argument('--modality', default='MIX2', help='the type of the input, AUDIO,RGB,FLOW, MIX1, MIX2, or MIX3, MIX_ALL')"
+      },
+      {
+        "file": "option.py",
+        "line": 5,
+        "text": "parser.add_argument('--rgb-list', default='list/rgb.list', help='list of rgb features ')"
+      },
+      {
+        "file": "option.py",
+        "line": 6,
+        "text": "parser.add_argument('--flow-list', default='list/flow.list', help='list of flow features')"
+      },
+      {
+        "file": "option.py",
+        "line": 7,
+        "text": "parser.add_argument('--audio-list', default='list/audio.list', help='list of audio features')"
+      },
+      {
+        "file": "option.py",
+        "line": 8,
+        "text": "parser.add_argument('--test-rgb-list', default='list/rgb_test.list', help='list of test rgb features ')"
+      },
+      {
+        "file": "option.py",
+        "line": 9,
+        "text": "parser.add_argument('--test-flow-list', default='list/flow_test.list', help='list of test flow features')"
+      },
+      {
+        "file": "option.py",
+        "line": 10,
+        "text": "parser.add_argument('--test-audio-list', default='list/audio_test.list', help='list of test audio features')"
+      },
+      {
+        "file": "option.py",
+        "line": 11,
+        "text": "parser.add_argument('--gt', default='list/gt.npy', help='file of ground truth ')"
+      },
+      {
+        "file": "option.py",
+        "line": 18,
+        "text": "parser.add_argument('--feature-size', type=int, default=1024+128, help='size of feature (default: 2048)')"
+      },
+      {
+        "file": "README.md",
+        "line": 4,
+        "text": "The project website is [XD-Violence](https://roc-ng.github.io/XD-Violence/). The features can be downloaded from our project website."
+      },
+      {
+        "file": "README.md",
+        "line": 6,
+        "text": "where we oversample each video frame with the \u201c5-crop\u201d augment, \u201c5-crop\u201d means cropping images into the center and four corners. _0.npy is the center, _1~ _4.npy is the corners."
+      },
+      {
+        "file": "README.md",
+        "line": 9,
+        "text": "* download or extract the features."
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 9,
+        "text": "feature_list = 'rgb_test.list'"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 15,
+        "text": "lists = list(open(feature_list))"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 20,
+        "text": "if '__0.npy' not in name:"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 41,
+        "text": "mod = (lens-1) % clip_len # minusing 1 is to align flow  rgb: minusing 1 when extracting features"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 50,
+        "text": "np.save('gt.npy', gt)"
+      },
+      {
+        "file": "list\\make_list.py",
+        "line": 4,
+        "text": "root_path = 'xx/vggish-features/test'    ## the path of features"
+      },
+      {
+        "file": "list\\make_list.py",
+        "line": 5,
+        "text": "files = sorted(glob.glob(os.path.join(root_path, \"*.npy\")))"
+      },
+      {
+        "file": "list\\make_list.py",
+        "line": 8,
+        "text": "with open('audio_test.list', 'w+') as f:  ## the name of feature list"
+      }
+    ],
+    "label_references": [
+      {
+        "file": "dataset.py",
+        "line": 21,
+        "text": "self.normal_flag = '_label_A'"
+      },
+      {
+        "file": "dataset.py",
+        "line": 49,
+        "text": "label = 0.0"
+      },
+      {
+        "file": "dataset.py",
+        "line": 51,
+        "text": "label = 1.0"
+      },
+      {
+        "file": "dataset.py",
+        "line": 97,
+        "text": "return features, label"
+      },
+      {
+        "file": "option.py",
+        "line": 8,
+        "text": "parser.add_argument('--test-rgb-list', default='list/rgb_test.list', help='list of test rgb features ')"
+      },
+      {
+        "file": "option.py",
+        "line": 9,
+        "text": "parser.add_argument('--test-flow-list', default='list/flow_test.list', help='list of test flow features')"
+      },
+      {
+        "file": "option.py",
+        "line": 10,
+        "text": "parser.add_argument('--test-audio-list', default='list/audio_test.list', help='list of test audio features')"
+      },
+      {
+        "file": "train.py",
+        "line": 4,
+        "text": "def CLAS(logits, label, seq_len, criterion, device, is_topk=True):"
+      },
+      {
+        "file": "train.py",
+        "line": 17,
+        "text": "clsloss = criterion(instance_logits, label)"
+      },
+      {
+        "file": "train.py",
+        "line": 35,
+        "text": "for i, (input, label) in enumerate(dataloader):"
+      },
+      {
+        "file": "train.py",
+        "line": 38,
+        "text": "input, label = input.float().to(device), label.float().to(device)"
+      },
+      {
+        "file": "train.py",
+        "line": 40,
+        "text": "clsloss = CLAS(logits, label, seq_len, criterion, device, is_topk)"
+      },
+      {
+        "file": "train.py",
+        "line": 41,
+        "text": "clsloss2 = CLAS(logits2, label, seq_len, criterion, device, is_topk)"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 9,
+        "text": "feature_list = 'rgb_test.list'"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 12,
+        "text": "gt_txt = 'xx/annotations.txt'     ## the path of test annotations"
+      },
+      {
+        "file": "list\\make_gt.py",
+        "line": 30,
+        "text": "if '_label_A' not in name:"
+      },
+      {
+        "file": "list\\make_list.py",
+        "line": 8,
+        "text": "with open('audio_test.list', 'w+') as f:  ## the name of feature list"
+      },
+      {
+        "file": "list\\make_list.py",
+        "line": 10,
+        "text": "if '_label_A' in file:"
+      }
+    ]
+  },
+  "urls_found": [
+    "https://arxiv.org/abs/1710.10903",
+    "https://arxiv.org/abs/1609.02907",
+    "https://roc-ng.github.io/XD-Violence/"
+  ]
+}

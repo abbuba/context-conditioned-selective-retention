@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-02T11:11:38.859260+00:00",
+  "status": "PASS",
+  "selected_videos": 24,
+  "successfully_audited_videos": 24,
+  "feature_derived_fps": 24.0,
+  "frames_per_temporal_score": 16,
+  "mean_actual_fps": 24.0,
+  "mean_duration_difference_seconds": 0.28546541666666664,
+  "max_absolute_duration_difference_seconds": 0.750334,
+  "metadata_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xd_raw_video_metadata_24.csv"
+}

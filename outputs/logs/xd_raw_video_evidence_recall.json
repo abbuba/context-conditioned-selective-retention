@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-02T11:25:05.560831+00:00",
+  "status": "PASS",
+  "experiment_type": "RAW_VIDEO_PIPELINE_PROOF",
+  "event_coverage_threshold": 0.8,
+  "subset_video_count": 24,
+  "annotated_event_count": 20,
+  "preserved_event_count": 10,
+  "raw_video_event_recall": 0.5,
+  "total_event_duration_seconds": 180.04166666666669,
+  "covered_event_duration_seconds": 113.16666599999999,
+  "event_duration_coverage_ratio": 0.6285582004165702,
+  "event_coverage_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_raw_video_event_coverage_24.csv",
+  "video_summary_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\raw_video_pipeline\\xd_raw_video_evidence_recall_summary_24.csv",
+  "scope_note": "This result applies only to the selected 24-video raw-video pipeline proof subset."
+}

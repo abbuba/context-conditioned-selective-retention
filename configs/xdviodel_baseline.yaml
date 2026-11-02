@@ -1,0 +1,18 @@
+xdviodel_baseline:
+  repository_commit: "f846d8cfc454943ec165bd2489b71e7dc0a1064d"
+  checkpoint:
+    path: "external/XDVioDet/ckpt/wsanodet_mix2.pkl"
+    sha256: "27067896258294da0a711e3f0c071190ea5848961298cbde389265627191ec2c"
+    size_bytes: 3382342
+    status: "LOADABLE"
+  modality: "MIX2"
+  visual:
+    representation: "I3D_RGB"
+    dimension: 1024
+    crops_per_video: 5
+  audio:
+    representation: "VGGish"
+    dimension: 128
+  combined_dimension: 1152
+  optical_flow_required: false
+  role: "Fixed pretrained baseline score generator"

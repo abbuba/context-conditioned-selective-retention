@@ -1,0 +1,51 @@
+{
+  "timestamp_utc": "2026-10-02T09:12:51.893093+00:00",
+  "status": "PASS",
+  "calibration_method": "Platt scaling using logistic regression",
+  "input_score": "offline_raw_score",
+  "validation_videos": 160,
+  "evaluation_videos": 640,
+  "random_seed": 42,
+  "model_coefficient": 5.055007991469429,
+  "model_intercept": -0.4588919312878086,
+  "validation_raw_metrics": {
+    "average_precision": 0.9972915083179951,
+    "roc_auc": 0.9954999999999999,
+    "brier_score": 0.2637244138145679,
+    "probability_min": 5.3132691135715504e-08,
+    "probability_max": 0.9982954263687134,
+    "probability_mean": 0.25721621966005237,
+    "probability_std": 0.2901237170042742
+  },
+  "validation_calibrated_metrics": {
+    "average_precision": 0.9972915083179951,
+    "roc_auc": 0.9954999999999999,
+    "brier_score": 0.11180122257175618,
+    "probability_min": 0.3872487851862174,
+    "probability_max": 0.9899242754198219,
+    "probability_mean": 0.625002575770981,
+    "probability_std": 0.2286321437531723
+  },
+  "evaluation_raw_metrics": {
+    "average_precision": 0.995558279710584,
+    "roc_auc": 0.9918958333333333,
+    "brier_score": 0.22795001575677146,
+    "probability_min": 2.009377775280541e-09,
+    "probability_max": 0.9995295405387878,
+    "probability_mean": 0.2882450572010399,
+    "probability_std": 0.306453840187928
+  },
+  "evaluation_calibrated_metrics": {
+    "average_precision": 0.995558279710584,
+    "roc_auc": 0.9918958333333333,
+    "brier_score": 0.10268313043468211,
+    "probability_min": 0.3872487238643923,
+    "probability_max": 0.9899863092650514,
+    "probability_mean": 0.6462612254069627,
+    "probability_std": 0.2431639293654382
+  },
+  "calibrated_score_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\scores\\xdviodel_offline_calibrated_event_probabilities.csv",
+  "reliability_curve_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xdviodel_validation_calibration_curve.csv",
+  "metrics_file": "C:\\Users\\abbub\\OneDrive\\Desktop\\Experiment\\cctv-selective-retention\\outputs\\metrics\\xdviodel_calibration_metrics.csv",
+  "scope_note": "Calibration is fitted only on the fixed validation subset. Evaluation probabilities are generated without refitting."
+}

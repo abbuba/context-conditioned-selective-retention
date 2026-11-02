@@ -1,0 +1,14 @@
+context_policy:
+  version: "v0.1"
+  representation:
+    - camera_id
+    - scene_id
+    - zone_class
+    - operating_state
+    - time_bin
+    - allowed_activity
+    - policy_version
+    - risk_weight
+  note: >
+    Site labels such as bank or school must not be inferred from generic videos.
+    Use only documented metadata or clearly labeled experimental policy profiles.
